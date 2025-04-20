@@ -1,6 +1,6 @@
 FROM debian:trixie-slim
 
-ARG PROMTAIL_VERSION=3.1.1
+ARG PROMTAIL_VERSION=3.4.3
 
 # Setup non-root user
 ENV USER_NAME=containeruser
