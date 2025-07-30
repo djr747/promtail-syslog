@@ -27,3 +27,7 @@ scrape_configs:
         target_label: facility
       - source_labels: [__syslog_connection_hostname]
         target_label: connection_hostname
+      - source_labels: [__syslog_message_facility]
+        target_label: facility
+      - source_labels: [__syslog_connection_hostname]
+        target_label: connection_hostname
