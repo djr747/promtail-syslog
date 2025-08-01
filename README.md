@@ -76,10 +76,10 @@ The message should be visible in Loki:
 
 | Timestamp                 | Labels                | Message          |
 | ------------------------- | --------------------- | ---------------- |
-| `2024-11-15 19:55:26.941` | `appname=Ubuntu`      | UDP Test message |
+| `2024-11-15 19:55:26.941` | `app_name=Ubuntu`      | UDP Test message |
 |                           | `facility=user`       |                  |
 |                           | `hostname=TESTING`    |                  |
-|                           | `appname=Ubuntu`      |                  |
+|                           | `app_name=Ubuntu`      |                  |
 |                           | `service_name=syslog` |                  |
 |                           | `severity=emergency`  |                  |
 

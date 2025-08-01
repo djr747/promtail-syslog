@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
+## [0.4.0] - 2025-07-31
+
+### Added
+
+- run container as non-root user
+
+### Changed
+
+- moved to using package manager to install `promtail` instead of downloading binary
+- move to using `debian:bookworm-slim` as base image
+- latest version of `promtail` will be installed
+- `supervisord.conf` updated to remove `root` user
+- replace label `appname` with `app_name` to match Loki's label naming convention
+- removed `host` label in `promtail.yaml` to avoid duplication with `hostname`
+
 ## [0.3.0] - 2024-11-15
 
 ### Added
