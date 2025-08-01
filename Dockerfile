@@ -1,9 +1,9 @@
-FROM debian:trixie-slim
+FROM debian:bookworm-slim
 
-ARG PROMTAIL_VERSION=3.4.3
+ARG PROMTAIL_VERSION=3.5.3
 
 # Setup non-root user
-ENV USER_NAME=containeruser
+ENV USER_NAME=promtail
 ENV USER_UID=1001
 ENV USER_GID=${USER_UID}
 ENV GROUP_NAME=${USER_NAME}
