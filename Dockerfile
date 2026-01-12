@@ -1,6 +1,6 @@
-FROM debian:bookworm-slim
+FROM debian:trixie-slim
 
-ARG PROMTAIL_VERSION=3.5.3
+ARG PROMTAIL_VERSION=3.6.3
 
 # Setup non-root user
 ENV USER_NAME=promtail
