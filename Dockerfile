@@ -1,4 +1,4 @@
-FROM debian:trixie-slim
+FROM debian:bookworm-slim
 
 ARG PROMTAIL_VERSION=3.6.3
 
@@ -22,7 +22,7 @@ RUN apt update \
     && chgrp "${GROUP_NAME}" /var/run \
     && chmod g+wx /var/run \
     && chgrp "${GROUP_NAME}" /var/log \
-    && chmod g+wx /var/log
+    && chmod g+wx /var/log 
 
 # Copy in configurations
 COPY promtail.yaml /etc/promtail.yaml
